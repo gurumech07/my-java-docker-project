@@ -60,6 +60,11 @@ jobs:
         with:
           context: .
           file: ./Dockerfile
-          push: true
-          tags: gurumech07/docker-hub-java:latest
+          push: ${{ github.event_name != 'pull_request' }}
+          tags: |
+            gurumech07/docker-hub-java:latest
+            type=sha256,mode=max
+          cache-from: type=inline
+          cache-to: type=inline,mode=max
+
           
