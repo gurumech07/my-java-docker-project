@@ -43,4 +43,7 @@ jobs:
         image: gurumech07/docker-hub-java
         registry: docker.io
         tags: docker.io/gurumech07/docker-hub-java:latest
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        logout: true
          
