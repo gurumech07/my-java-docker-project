@@ -25,6 +25,12 @@ jobs:
         with:
           distribution: temurin
           java-version: '8'
+          
+      - name: Debug build output
+        run: |
+            ls
+            ls build
+            ls build/libs
 
       - name: Build with Gradle
         run: ./gradlew clean build
