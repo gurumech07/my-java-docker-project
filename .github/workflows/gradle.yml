@@ -42,5 +42,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: gurumech07/docker-hub-java:latest
-
-         
+          
