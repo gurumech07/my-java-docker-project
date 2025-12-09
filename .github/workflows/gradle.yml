@@ -43,6 +43,6 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: your-dockerhub-user/docker-hub-java:latest
+        tags: gurumech07/docker-hub-java:latest
 
          
