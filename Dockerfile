@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-alpine
+FROM FROM eclipse-temurin:8-jre
 
 EXPOSE 8080
 
